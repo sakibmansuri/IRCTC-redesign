@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Train Status</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/train-status.css">
+    <link rel="stylesheet" href="CSS/model.css">
+    <link rel="stylesheet" href="CSS/darkmode.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-train"></i>
+            IRCTC
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+
+        <div class="nav-actions">
+
+            <button id="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="login-btn book-btn">
+                Login
+            </button>
+
+        </div>
+
+    </nav>
+
+    <section class="status-section">
+
+        <h1>Live Train Status</h1>
+
+        <p>Search any train to check its current status and tap to book tickets.</p>
+
+        <input type="text" id="searchTrain" placeholder="Search by Train Name...">
+
+        <div id="statusResults"></div>
+
+    </section>
+
+    <script src="JS/trains.js"></script>
+    <script src="JS/train-status.js"></script>
+    <script src="JS/model.js"></script>
+    <script src="JS/darkmode.js"></script>
+
+</body>
+
+</html>
