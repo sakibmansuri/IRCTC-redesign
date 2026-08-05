@@ -29,8 +29,9 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--surface);
+    background:var(--background);
     color: var(--text);
+    background-size: 400% 400%;
 }
 
 a {
@@ -43,7 +44,7 @@ ul {
 }
 
 img {
-    max-width: 100%;
+    width: 100px;
 }
 
 /* header */
@@ -58,7 +59,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: var(--primary);
+    background: linear-gradient(
+        45deg, #2563eb, #1944a0, #266bff
+    );
+    background-size: 300% 300%;
+    animation: gradientMover 5s ease infinite;
     box-shadow: 1px 2px 12px rgba(86, 1, 143, 0.08);
 }
 
@@ -102,7 +107,7 @@ header {
 
 .login-btn:hover {
     color: var(--background);
-    background: var(--primary-dark);
+    background: darkblue;
     border: var(--background) solid 2px;
     transform: translateY(-2px);
 }
@@ -121,7 +126,7 @@ header {
     gap: 20px;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
 }
 
@@ -164,7 +169,11 @@ header {
     height: 55px;
     border: none;
     border-radius: 50px;
-    background: var(--primary);
+    background: linear-gradient(
+        45deg, var(--primary), darkblue, rgb(38, 53, 58)
+    );
+    background-size: 300% 300%;
+    animation: gradientMover 2s ease infinite;
     color: #fff;
     cursor: pointer;
     overflow: hidden;
@@ -174,7 +183,11 @@ header {
 .search-btn:hover {
     width: 200px;
     border-radius: 12px;
-    background: var(--primary-dark);
+    background: linear-gradient(
+        45deg, var(--primary), darkblue, rgb(38, 53, 58)
+    );
+    background-size: 300% 300%;
+    animation: gradientMover 2s ease infinite;
 }
 
 .search-btn:hover span {
@@ -233,7 +246,11 @@ header {
 }
 
 .hero-btn {
-    background: var(--primary);
+    background: linear-gradient(
+        45deg, var(--primary), darkblue, rgb(38, 53, 58)
+    );
+    background-size: 300% 300%;
+    animation: gradientMover 3s ease infinite;
     color: white;
     border: var(--primary) solid 1px;
     padding: 16px 34px;
@@ -244,9 +261,6 @@ header {
 }
 
 .hero-btn:hover {
-    color: var(--primary);
-    background: var(--background);
-    border: var(--primary) solid 1px;
     transform: translateY(-2px);
 }
 
@@ -263,7 +277,11 @@ header {
 
 /* footer */
 .footer {
-    background: var(--text);
+    background: linear-gradient(
+        45deg, black, rgb(37, 37, 37), rgb(38, 53, 58)
+    );
+    background-size: 300% 300%;
+    animation: gradientMover 5s ease-in-out infinite;
     color: #fff;
     margin-top: 80px;
 }
@@ -329,6 +347,18 @@ header {
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     color: rgba(255, 255, 255, 0.75);
     font-size: 14px;
+}
+
+@keyframes gradientMover{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 /* Tablet */
