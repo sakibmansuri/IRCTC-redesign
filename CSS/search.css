@@ -1,0 +1,99 @@
+.search-section {
+    position: relative;
+    z-index: 10;
+    margin: 30px 80px -60px;
+}
+
+.search-box {
+    background: var(--background);
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 180px;
+}
+
+.field label {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary-dark);
+}
+
+.field input,
+.field select {
+    padding: 12px 15px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+.field input:focus,
+.field select:focus {
+    border-color: var(--primary);
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--primary), darkblue, rgb(38, 53, 58));
+    background-size: 300% 300%;
+    animation: gradientMover 2s ease infinite;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.search-btn:hover {
+    width: 200px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, var(--primary), darkblue, rgb(38, 53, 58));
+    background-size: 300% 300%;
+    animation: gradientMover 2s ease infinite;
+}
+
+.search-btn:hover span {
+    opacity: 1;
+    max-width: 150px;
+}
+
+.search-btn i {
+    position: absolute;
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: left .4s ease;
+}
+
+.search-btn:hover i {
+    opacity: 0;
+    transition: .4s;
+}
+
+.search-btn span {
+    white-space: nowrap;
+    opacity: 0;
+    max-width: 0;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}

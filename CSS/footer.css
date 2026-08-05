@@ -1,0 +1,70 @@
+.footer {
+    background: linear-gradient(45deg, black, rgb(37, 37, 37), rgb(38, 53, 58));
+    background-size: 300% 300%;
+    animation: gradientMover 5s ease-in-out infinite;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h2,
+.footer-col h3 {
+    margin-bottom: 18px;
+}
+
+.footer-col p,
+.footer-col li {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+.footer-col ul li a {
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: var(--accent);
+    padding-left: 6px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: var(--accent);
+    color: var(--text);
+    transform: translateY(-4px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+}

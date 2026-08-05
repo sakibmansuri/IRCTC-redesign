@@ -1,0 +1,168 @@
+body.dark {
+
+    --background: #0f172a;
+    --surface: #1e293b;
+    --primary: #3b82f6;
+    --primary-dark: #2563eb;
+    --accent: #f59e0b;
+
+    --text: #f8fafc;
+    --text-light: #cbd5e1;
+    --border: #334155;
+
+    background: var(--background);
+    color: var(--text);
+
+}
+
+/* Body */
+
+body.dark {
+    background: var(--background);
+    color: var(--text);
+}
+
+/* Navbar */
+
+body.dark .navbar {
+
+    background: #172554;
+
+}
+
+/* Search Box */
+
+body.dark .search-box {
+
+    background: var(--surface);
+
+}
+
+/* Inputs */
+
+body.dark input,
+body.dark select {
+
+    background: #273549;
+    color: white;
+    border: 1px solid var(--border);
+
+}
+
+body.dark input::placeholder {
+
+    color: #cbd5e1;
+
+}
+
+/* Hero */
+
+body.dark .hero {
+
+    background: var(--background);
+
+}
+
+body.dark .hero h1 {
+
+    color: white;
+
+}
+
+body.dark .hero p {
+
+    color: var(--text-light);
+
+}
+
+/* Train Cards */
+
+body.dark .train-card {
+
+    background: var(--surface);
+    color: white;
+    border: 1px solid var(--border);
+
+}
+
+body.dark .train-card:hover {
+
+    background: #29374d;
+
+}
+
+/* Train Info */
+
+body.dark .train-info span {
+
+    background: #334155;
+    color: white;
+
+}
+
+body.dark .train-card:hover .train-info span {
+
+    background: var(--accent);
+    color: white;
+
+}
+
+/* Login Model */
+
+body.dark .login-model-card {
+
+    background: var(--surface);
+
+}
+
+/* Footer */
+
+body.dark .footer {
+
+    background: #020617;
+
+}
+
+/* Search Bar on Train Status */
+
+body.dark #searchTrain {
+
+    background: #273549;
+    color: white;
+    border: 1px solid var(--border);
+
+}
+
+/* Theme Button */
+
+#theme-toggle {
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background: white;
+
+    color: var(--primary);
+
+    transition: .3s;
+
+}
+
+body.dark #theme-toggle {
+
+    background: #334155;
+    color: white;
+
+}
+
+#theme-toggle:hover {
+
+    background: var(--accent);
+    color: white;
+
+}

@@ -1,0 +1,84 @@
+.train-card {
+    background: #fff;
+    border: var(--primary) solid 1px;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+}
+
+.train-card:hover {
+    transform: translateY(-5px);
+}
+
+.train-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.train-number {
+    background: var(--primary);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.train-route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.route-line {
+    flex: 1;
+    color: gray;
+}
+
+.train-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.train-info span {
+    background: #f3f4f6;
+    color: black;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: .5s ease;
+}
+
+.train-card:hover .train-info span{
+    background: var(--accent);
+    color: #fff;
+}
+
+.train-info span:hover {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+.book-btn {
+    background: linear-gradient(45deg, var(--primary), darkblue, rgb(38, 53, 58));
+    background-size: 300% 300%;
+    animation: gradientMover 3s ease infinite;
+    color: white;
+    border: white solid 1px;
+    padding: 16px 34px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.book-btn:hover {
+    transform: translateY(-2px);
+}
