@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/train-status.css">
     <link rel="stylesheet" href="CSS/model.css">
     <link rel="stylesheet" href="CSS/darkmode.css">
+    <link rel="stylesheet" href="CSS/mediaquery.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -34,17 +35,11 @@
             <li><a href="index.html">Home</a></li>
         </ul>
 
-        <div class="nav-actions">
+        <button id="theme-toggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
 
-            <button id="theme-toggle">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-
-            <button class="login-btn book-btn">
-                Login / Register
-            </button>
-
-        </div>
+        <button class="login-btn book-btn">Login / Register</button>
 
     </nav>
 
@@ -60,29 +55,10 @@
 
     </section>
 
-    <div class="login-model" id="loginModel">
-        <div class="login-model-card">
-            <span class="close-btn">&times;</span>
-            <h2>Login Required</h2>
-            <p>
-                Please login or register to continue booking your train.
-            </p>
-            <input type="email" placeholder="Email Address">
-            <input type="password" placeholder="Password">
-            <button class="hero-btn login-btn-model">
-                Login
-            </button>
-            <p class="register-text">
-                Don't have an account?
-                <a href="#">Register</a>
-            </p>
-        </div>
-    </div>
-
-    <script src="js/trains.js"></script>
-    <script src="js/train-status.js"></script>
-    <script src="js/model.js"></script>
-    <script src="js/darkmode.js"></script>
+    <script src="JS/trains.js"></script>
+    <script src="JS/train-status.js"></script>
+    <script src="JS/model.js"></script>
+    <script src="JS/darkmode.js"></script>
 
 </body>
 
