@@ -8,3 +8,7 @@
 @import url("train-status.css");
 @import url("login.css");
 @import url("darkmode.css");
+
+@view-transition {
+    navigation:auto;
+}
